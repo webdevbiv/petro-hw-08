@@ -1,0 +1,113 @@
+.client {
+  max-width: 1200px;
+  padding-top: 99px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.client__title {
+  margin-bottom: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.client__list {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1199.98px) {
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.client__item {
+  display: flex;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  justify-content: center;
+
+  margin-right: 30px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  @media screen and (max-width: 767.98px) {
+    margin-top: 30px;
+    margin-left: 30px;  
+    margin-right: 0;
+    flex-basis: calc((100% / 2) - 30px);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-top: 30px;
+    margin-left: 30px;  
+    margin-right: 0;
+    flex-basis: calc((100% / 3) - 30px);
+  }
+}
+
+.client__item:last-child {
+  margin-right: 0;
+}
+
+.client__item:hover,
+.client__item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client__link {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--icon-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  @media screen and (max-width: 1199.98px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.client__link:hover,
+.client__link:focus {
+  color: var(--accent-color);
+}
+
+.client__icon {
+  fill: currentColor;
+}
+
+.client__icon:hover,
+.client__icon:focus {
+  fill: currentColor;
+}

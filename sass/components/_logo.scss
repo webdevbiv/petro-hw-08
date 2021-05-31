@@ -1,0 +1,26 @@
+.header-nav__logo {
+  margin-right: 93px;
+
+  color: var(--title-text-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 88px;
+  }
+
+
+}
+
+.header-nav__logo-web {
+  color: var(--accent-color);
+}
